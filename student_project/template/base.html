@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="{first_app:base}">Home</a></li>
+        <li class="active"><a href="{first_app:show}">Student Records<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="{first_app:stud}">Add Student</a></li>
+        <li class="active"><a href="{% url 'admin:index' %}">Admin</a></li>
+        <li class="active"><a href="{first_app:searchpage}">Search</a></li>
+
+        </ul>
+   </nav>
+
+   {% block body_block %}
+   <br><br><br><br><br><br>
+   <div class="container">
+   <p><b>Government Engineering College Palakkad, Sreekrishnapuram is a premier educational institute established in 1999. <br>It is situated in Palakkad district of Kerala. The college is fully owned by Govt.of Kerala and is under the Directorate of Technical Education, Kerala. GEC Sreekrishnapuram is approved by the AICTE and is affiliated to APJ Abdul kalam Technological University (from 2015 onwards)
+
+The college offers full-time B.Tech programmes in the following 5 Engieering branches:
+<ol><li> Computer Science and Engineering,</li>  <li>Electronics and Communication Engineering</li><li> Information Technology </li><li> Mechanical Engineering</li> <li> Electrical and Electronics Engineering</li></ol>
+
+College offers an M.Tech course in Computational Linguistics in the Dept. of Computer Science and Engineering from 2011 onwards.<b></p>
+</div>
+   {%endblock%}
+  </body>
+</html>
